@@ -26,13 +26,14 @@ inoremap <right> <nop>
 " Custom functions
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>v V`] " Highlight what was just pasted
-nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<CR>
+nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <leader><space> :nohls<CR>
 nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" Ack
+" ack & ag (the silver searcher)
 map <leader>f :Ack!<Space>
+map <leader>a :Ag!<Space>
 
-" Ctrl-P
+" ctrl-p
 nmap ; :CtrlPBuffer<CR>
