@@ -18,8 +18,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
-Bundle 'Raimondi/delimitMate'
-Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-liquid'
@@ -33,6 +31,12 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-sensible'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'MarcWeber/ultisnips.git'
+Bundle 'vim-scripts/Auto-Pairs'
+Bundle 'int3/vim-extradite'
+"Bundle 'wincent/Command-T.git'
+"Bundle 'Raimondi/delimitMate'
+"Bundle 'msanders/snipmate.vim'
 "Bundle 'Valloric/YouCompleteMe'
 "Bundle 'vim-scripts/YankRing.vim'
 "Bundle 'tpope/vim-vividchalk'
@@ -126,6 +130,9 @@ source ~/.vim/keybindings.vim
 " ack
 let g:ackprg="ack -H --nocolor --nogroup --column"
 
+" ag
+let g:agprg="ag --nocolor --nogroup --column"
+
 " NERDTree
 let NERDTreeHijackNetrw = 0
 let NERDTreeShowBookmarks = 1
@@ -140,11 +147,16 @@ source ~/.vim/bundle/snipmate-snippets/support_functions.vim
 " Tags
 set tags=./TAGS;/
 
-" Ctrl-P
-:let g:ctrlp_map = '<Leader>t'
-:let g:ctrlp_match_window_bottom = 0
-:let g:ctrlp_match_window_reversed = 0
-:let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
-:let g:ctrlp_working_path_mode = 0
-:let g:ctrlp_dotfiles = 0
-:let g:ctrlp_switch_buffer = 0
+" ctrl-p
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_switch_buffer = 0
+
+" GitGutter
+let g:gitgutter_on_bufenter = 0
+let g:gitgutter_all_on_focusgained = 0
+
