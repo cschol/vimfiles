@@ -1,7 +1,8 @@
 " Color and font settings
 set background=dark
 colorscheme solarized
-set guifont=Ubuntu\ Mono\ 11
+"set guifont=Ubuntu\ Mono\ 11
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
 
 " Hide toolbar and menus
 set guioptions-=T

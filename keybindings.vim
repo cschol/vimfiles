@@ -7,11 +7,15 @@ imap jj <Esc>
 " NERDTree
 nmap <F2> :NERDTreeToggle<CR>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " Shortcuts for window management
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"FIXME This interferes with tmux bindings (C-l)
+"nnoremap <C-h> <C-w>h
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
 
 " Disable evil arrow keys ;)
 nnoremap <up> <nop>
