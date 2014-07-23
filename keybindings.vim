@@ -46,7 +46,7 @@ nmap ; :CtrlPBuffer<CR>
 map <F3> :cnext<CR>
 map <F4> :cc<CR>
 map <F5> :cprev<CR>
- 
+
 " Fugitive
 nnoremap <silent> <leader>gs :Gstatus<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
@@ -54,6 +54,8 @@ nnoremap <silent> <leader>gc :Gcommit<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gl :Glog<CR>
 nnoremap <silent> <leader>gp :Git push<CR>
+
+nnoremap <leader>c :bp\|bd #<CR>
 
 " neocomplcache
 "inoremap <expr><C-g> neocomplcache#undo_completion()
